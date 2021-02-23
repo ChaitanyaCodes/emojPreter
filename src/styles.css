@@ -1,0 +1,39 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 1rem;
+  width: 80%;
+}
+
+.display {
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+  color: #454545;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.list-non-bullet {
+  list-style-type: none;
+}
+
+.list-non-bullet li {
+  font-size: 1.5rem;
+  display: inline;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.list-non-bullet li:hover {
+  font-size: 2rem;
+}
