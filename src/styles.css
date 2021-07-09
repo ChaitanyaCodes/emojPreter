@@ -3,15 +3,29 @@
   text-align: center;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: #91ffbf;
+}
+
+.title {
+  color: #0d4233;
 }
 
 input {
   padding: 1rem;
   width: 80%;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.4);
 }
 
 .display {
