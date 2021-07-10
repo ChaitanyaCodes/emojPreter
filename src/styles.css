@@ -39,12 +39,13 @@ input {
 
 .list-non-bullet {
   list-style-type: none;
+  padding: 0rem 0.5rem;
 }
 
 .list-non-bullet li {
   font-size: 1.5rem;
   display: inline;
-  padding: 1rem;
+  padding-right: 1rem;
   cursor: pointer;
 }
 
