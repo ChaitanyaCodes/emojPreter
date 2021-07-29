@@ -45,7 +45,7 @@ input {
 .display {
   box-sizing: border-box;
   padding: 1rem;
-  margin: 1rem;
+  margin: 2rem 1rem 1rem;
   color: #454545;
   font-weight: 700;
   font-size: 2rem;
