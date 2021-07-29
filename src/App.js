@@ -42,26 +42,30 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 className="title">Emoj Pretor</h1>
-      <input
-        onChange={emojiInputHandler}
-        placeholder={messages.inputPlaceholder}
-      ></input>
-      <div className="display">
-        {meaning === messages.notFound || meaning === ""
-          ? meaning
-          : `${searchQuery} = ${meaning}`}
-      </div>
-      <div>
-        <ul className="list-non-bullet">
-          {emojiKeys.map((emoji) => {
-            return (
-              <li key={emoji} onClick={() => emojiClickHandler(emoji)}>
-                {emoji}
-              </li>
-            );
-          })}
-        </ul>
+      <div className="container">
+        <h1 className="title">Emoj Pretor</h1>
+        <input
+          onChange={emojiInputHandler}
+          placeholder={messages.inputPlaceholder}
+        ></input>
+        <div className="display" placeholder="meaning">
+          {meaning === messages.notFound || meaning === ""
+            ? meaning
+              ? meaning
+              : "Select emoji"
+            : `${searchQuery} : ${meaning}`}
+        </div>
+        <div>
+          <ul className="list list-non-bullet">
+            {emojiKeys.map((emoji) => {
+              return (
+                <li key={emoji} onClick={() => emojiClickHandler(emoji)}>
+                  {emoji}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );
