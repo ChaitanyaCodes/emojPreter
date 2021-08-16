@@ -1,3 +1,3 @@
 # emojPreter
 
-The app is built using JavaScript to translate english sentences to Minion's language.
+The app is built using React to list the emoji's and get their meaning.
